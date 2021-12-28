@@ -2,15 +2,19 @@
 //  AppDelegate.swift
 //  SingleScreenRotate
 //
-//  Created by Haaretz on 28/12/2021.
+//  Created by Nathan Furman on 28/12/2021.
 //
 
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+    var orientationLock: UIInterfaceOrientationMask = .allButUpsideDown
+    
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return orientationLock
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3633BCA0DCEA54498E423E65 /* Pods_SingleScreenRotate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8DF0075C5F4CC4B4DE2B7C /* Pods_SingleScreenRotate.framework */; };
 		AF1CEE2B277B75A2007E9ADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CEE2A277B75A2007E9ADD /* AppDelegate.swift */; };
 		AF1CEE2D277B75A2007E9ADD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CEE2C277B75A2007E9ADD /* SceneDelegate.swift */; };
 		AF1CEE2F277B75A2007E9ADD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CEE2E277B75A2007E9ADD /* ViewController.swift */; };
 		AF1CEE32277B75A2007E9ADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1CEE30277B75A2007E9ADD /* Main.storyboard */; };
 		AF1CEE34277B75A5007E9ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF1CEE33277B75A5007E9ADD /* Assets.xcassets */; };
 		AF1CEE37277B75A5007E9ADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1CEE35277B75A5007E9ADD /* LaunchScreen.storyboard */; };
+		AF1CEE3F277B75D4007E9ADD /* OrientationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CEE3E277B75D4007E9ADD /* OrientationHandler.swift */; };
+		AF1CEE41277B797C007E9ADD /* AnotherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CEE40277B797C007E9ADD /* AnotherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28EF9F16EEF614E395396288 /* Pods-SingleScreenRotate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingleScreenRotate.debug.xcconfig"; path = "Target Support Files/Pods-SingleScreenRotate/Pods-SingleScreenRotate.debug.xcconfig"; sourceTree = "<group>"; };
+		A0F3347B98C9C62F22921AD7 /* Pods-SingleScreenRotate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingleScreenRotate.release.xcconfig"; path = "Target Support Files/Pods-SingleScreenRotate/Pods-SingleScreenRotate.release.xcconfig"; sourceTree = "<group>"; };
+		AD8DF0075C5F4CC4B4DE2B7C /* Pods_SingleScreenRotate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingleScreenRotate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1CEE27277B75A2007E9ADD /* SingleScreenRotate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleScreenRotate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1CEE2A277B75A2007E9ADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF1CEE2C277B75A2007E9ADD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		AF1CEE33277B75A5007E9ADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF1CEE36277B75A5007E9ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF1CEE38277B75A5007E9ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF1CEE3E277B75D4007E9ADD /* OrientationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationHandler.swift; sourceTree = "<group>"; };
+		AF1CEE40277B797C007E9ADD /* AnotherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3633BCA0DCEA54498E423E65 /* Pods_SingleScreenRotate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1C538CD95D6B2F18CBD4960 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD8DF0075C5F4CC4B4DE2B7C /* Pods_SingleScreenRotate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF1CEE1E277B75A2007E9ADD = {
 			isa = PBXGroup;
 			children = (
 				AF1CEE29277B75A2007E9ADD /* SingleScreenRotate */,
 				AF1CEE28277B75A2007E9ADD /* Products */,
+				D99D4EF73EBED442E1A38F0F /* Pods */,
+				A1C538CD95D6B2F18CBD4960 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +75,10 @@
 		AF1CEE29277B75A2007E9ADD /* SingleScreenRotate */ = {
 			isa = PBXGroup;
 			children = (
+				AF1CEE3E277B75D4007E9ADD /* OrientationHandler.swift */,
 				AF1CEE2A277B75A2007E9ADD /* AppDelegate.swift */,
 				AF1CEE2C277B75A2007E9ADD /* SceneDelegate.swift */,
+				AF1CEE40277B797C007E9ADD /* AnotherViewController.swift */,
 				AF1CEE2E277B75A2007E9ADD /* ViewController.swift */,
 				AF1CEE30277B75A2007E9ADD /* Main.storyboard */,
 				AF1CEE33277B75A5007E9ADD /* Assets.xcassets */,
@@ -67,6 +88,16 @@
 			path = SingleScreenRotate;
 			sourceTree = "<group>";
 		};
+		D99D4EF73EBED442E1A38F0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28EF9F16EEF614E395396288 /* Pods-SingleScreenRotate.debug.xcconfig */,
+				A0F3347B98C9C62F22921AD7 /* Pods-SingleScreenRotate.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF1CEE3B277B75A5007E9ADD /* Build configuration list for PBXNativeTarget "SingleScreenRotate" */;
 			buildPhases = (
+				D11D8A7FB6A639DBC8AA43F8 /* [CP] Check Pods Manifest.lock */,
 				AF1CEE23277B75A2007E9ADD /* Sources */,
 				AF1CEE24277B75A2007E9ADD /* Frameworks */,
 				AF1CEE25277B75A2007E9ADD /* Resources */,
+				2FA6AB9BA495B109A2D2D693 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +166,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FA6AB9BA495B109A2D2D693 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SingleScreenRotate/Pods-SingleScreenRotate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SingleScreenRotate/Pods-SingleScreenRotate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SingleScreenRotate/Pods-SingleScreenRotate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D11D8A7FB6A639DBC8AA43F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SingleScreenRotate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF1CEE23277B75A2007E9ADD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AF1CEE2F277B75A2007E9ADD /* ViewController.swift in Sources */,
+				AF1CEE41277B797C007E9ADD /* AnotherViewController.swift in Sources */,
 				AF1CEE2B277B75A2007E9ADD /* AppDelegate.swift in Sources */,
+				AF1CEE3F277B75D4007E9ADD /* OrientationHandler.swift in Sources */,
 				AF1CEE2D277B75A2007E9ADD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +361,7 @@
 		};
 		AF1CEE3C277B75A5007E9ADD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28EF9F16EEF614E395396288 /* Pods-SingleScreenRotate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +373,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,6 +391,7 @@
 		};
 		AF1CEE3D277B75A5007E9ADD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0F3347B98C9C62F22921AD7 /* Pods-SingleScreenRotate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +403,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

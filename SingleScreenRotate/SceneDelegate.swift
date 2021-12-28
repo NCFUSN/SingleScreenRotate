@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  SingleScreenRotate
 //
-//  Created by Haaretz on 28/12/2021.
+//  Created by Nathan Furman on 28/12/2021.
 //
 
 import UIKit
