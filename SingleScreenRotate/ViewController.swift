@@ -11,12 +11,10 @@ import RxSwift
 
 class ViewController: UIViewController {
     private let disposeBag = DisposeBag()
-    private var anotherController: AnotherViewController!
 
     @IBOutlet weak var btnNextPage: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
-        
         // Lock the screen to portraite only
         OrientationHandler.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
     }
@@ -29,9 +27,9 @@ class ViewController: UIViewController {
     private func subscribe() {
         btnNextPage.rx.tap.subscribe(onNext: { [unowned self] _ in
             let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            anotherController = storyBoard.instantiateViewController(withIdentifier: "AnotherViewController") as? AnotherViewController
-            anotherController.modalPresentationStyle = .fullScreen
-            self.present(anotherController, animated: true, completion: nil)
+            let anotherController = storyBoard.instantiateViewController(withIdentifier: "AnotherViewController") as? AnotherViewController
+            anotherController!.modalPresentationStyle = .fullScreen
+            self.present(anotherController!, animated: true, completion: nil)
         }).disposed(by: disposeBag)
     }
 }

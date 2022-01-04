@@ -36,4 +36,8 @@ class AnotherViewController: UIViewController {
             self.dismiss(animated: true, completion: nil)
         }).disposed(by: disposeBag)
     }
+    
+    deinit {
+        print("DEINIT")
+    }
 }
